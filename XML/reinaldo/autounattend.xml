@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
-	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=pt-BR&Locale=pt-BR&Keyboard=00020409&GeoLocation=32&ProcessorArchitecture=x86&ProcessorArchitecture=amd64&ProcessorArchitecture=arm64&BypassRequirementsCheck=true&ComputerNameMode=Script&ComputerNameScript=if%28+%5BSystem.Environment%5D%3A%3AOSVersion.Version.Build+-lt+26100+%29+%7B%0D%0A++++return+%27WIN10-REINALDO%27%3B%0D%0A%7D+else+%7B%0D%0A++++return+%27WIN11-REINALDO%27%3B%0D%0A%7D&CompactOsMode=Default&TimeZoneMode=Implicit&PartitionMode=Interactive&WindowsEditionMode=Generic&WindowsEdition=pro&UserAccountMode=Unattended&AccountName0=Reinaldo&AccountPassword0=091016&AccountGroup0=Administrators&AccountName1=User&AccountPassword1=0910&AccountGroup1=Users&AccountName2=&AccountName3=&AccountName4=&AutoLogonMode=Own&ObscurePasswords=true&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=HiddenSystem&ShowFileExtensions=true&ClassicContextMenu=true&LaunchToThisPC=true&TaskbarSearch=Hide&TaskbarIconsMode=Custom&TaskbarIconsXml=%3CLayoutModificationTemplate+xmlns%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FLayoutModification%22+xmlns%3Adefaultlayout%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FFullDefaultLayout%22+xmlns%3Astart%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FStartLayout%22+xmlns%3Ataskbar%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FTaskbarLayout%22+Version%3D%221%22%3E%0D%0A++%3CCustomTaskbarLayoutCollection+PinListPlacement%3D%22Replace%22%3E%0D%0A++++%3Cdefaultlayout%3ATaskbarLayout%3E%0D%0A++++++%3Ctaskbar%3ATaskbarPinList%3E%0D%0A++++++++%3Ctaskbar%3ADesktopApp+DesktopApplicationID%3D%22Microsoft.Windows.Explorer%22+%2F%3E%0D%0A++++++++%3Ctaskbar%3ADesktopApp+DesktopApplicationID%3D%22Microsoft.WindowsTerminal%22+%2F%3E%0D%0A++++++%3C%2Ftaskbar%3ATaskbarPinList%3E%0D%0A++++%3C%2Fdefaultlayout%3ATaskbarLayout%3E%0D%0A++%3C%2FCustomTaskbarLayoutCollection%3E%0D%0A%3C%2FLayoutModificationTemplate%3E&HideTaskViewButton=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&EnableRemoteDesktop=true&AllowPowerShellScripts=true&DisableAppSuggestions=true&HideEdgeFre=true&DeleteWindowsOld=true&EffectsMode=Appearance&WifiMode=Skip&ExpressSettings=DisableAll&KeysMode=Skip&ColorMode=Custom&SystemColorTheme=Dark&AppsColorTheme=Dark&AccentColor=%230b0c2b&EnableTransparency=true&WallpaperMode=Script&WallpaperScript=%24url+%3D+%27https%3A%2F%2Fraw.githubusercontent.com%2Freinaldogpn%2Fwindows-post-install%2Frefs%2Fheads%2Fmain%2Fresources%2Fwallpaper.jpg%27%3B%0D%0Areturn+%28+Invoke-WebRequest+-Uri+%24url+-UseBasicParsing+-TimeoutSec+30+%29.Content%3B&Remove3DViewer=true&RemoveBingSearch=true&RemoveCamera=true&RemoveClipchamp=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMediaFeatures=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveOffice365=true&RemoveOneNote=true&RemoveOneSync=true&RemovePaint3D=true&RemovePeople=true&RemovePhotos=true&RemovePowerAutomate=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveSkype=true&RemoveSnippingTool=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveFaxAndScan=true&RemoveWindowsHello=true&RemoveWindowsMediaPlayer=true&RemoveZuneMusic=true&RemoveWordPad=true&RemoveXboxApps=true&RemoveYourPhone=true&FirstLogonScript0=%24Pkgs+%3D+%40%28%0D%0A++++%227zip.7zip%22%2C%0D%0A++++%22Cloudflare.Warp%22%2C%0D%0A++++%22Discord.Discord%22%2C%0D%0A++++%22Git.Git%22%2C%0D%0A++++%22Google.Chrome.EXE%22%2C%0D%0A++++%22Microsoft.VCRedist.2015%2B.x64%22%2C%0D%0A++++%22Microsoft.VCRedist.2015%2B.x86%22%2C%0D%0A++++%22Microsoft.VisualStudioCode%22%2C%0D%0A++++%22Microsoft.VisualStudio.2022.Community%22%2C%0D%0A++++%22Microsoft.WindowsTerminal%22%2C%0D%0A++++%22Notepad%2B%2B.Notepad%2B%2B%22%2C%0D%0A++++%22Oracle.JavaRuntimeEnvironment%22%2C%0D%0A++++%22Oracle.MySQL%22%2C%0D%0A++++%22qBittorrent.qBittorrent%22%2C%0D%0A++++%22RARLab.WinRAR%22%2C%0D%0A++++%22TeamViewer.TeamViewer%22%2C%0D%0A++++%22Valve.Steam%22%2C%0D%0A++++%22VideoLAN.VLC%22%0D%0A%29%0D%0A%0D%0A%24RootDir+%3D+Join-Path+-Path+%24env%3AUserProfile+-ChildPath+%22WPI%22%0D%0A%24DownloadDir+%3D+Join-Path+-Path+%24RootDir+-ChildPath+%22downloads%22%0D%0A%24OutputLog+%3D+Join-Path+-Path+%24RootDir+-ChildPath+%22output.log%22%0D%0A%24Architecture+%3D+%24env%3AProcessor_Architecture.ToLower%28%29%0D%0A%0D%0Aif+%28%5BSystem.Environment%5D%3A%3AOSVersion.Version.Build+-ge+26100%29+%7B%0D%0A++++%24OtherParams+%3D+%22-AllowUnsigned+-ForceApplicationShutdown+-ErrorAction+Stop%22%0D%0A%7D%0D%0Aelse+%7B%0D%0A++++%24OtherParams+%3D+%22-ForceApplicationShutdown+-ErrorAction+Stop%22%0D%0A%7D%0D%0A%0D%0Aif+%28-not+%28Test-Path+%24RootDir%29%29+%7B+New-Item+-ItemType+Directory+-Path+%24RootDir+%7C+Out-Null+%7D%0D%0Aif+%28-not+%28Test-Path+%24DownloadDir%29%29+%7B+New-Item+-ItemType+Directory+-Path+%24DownloadDir+%7C+Out-Null+%7D%0D%0A%0D%0A%23+Functions%0D%0A%0D%0Afunction+Retry-Command+%7B%0D%0A++++param+%28%0D%0A++++++++%5BScriptBlock%5D%24Command%2C%0D%0A++++++++%5Bint%5D%24MaxRetries+%3D+5%2C%0D%0A++++++++%5Bint%5D%24RetryDelay+%3D+5%0D%0A++++%29%0D%0A%0D%0A++++%24attempts+%3D+0%0D%0A++++%24success+%3D+%24false%0D%0A%0D%0A++++while+%28-not+%24success+-and+%24attempts+-lt+%24MaxRetries%29+%7B%0D%0A++++++++try+%7B%0D%0A++++++++++++%26+%24Command%0D%0A++++++++++++%24success+%3D+%24true%0D%0A++++++++%7D%0D%0A++++++++catch+%7B%0D%0A++++++++++++Write-Warning+%22Attempt+%24%28%24attempts+%2B+1%29+failed.+Error%3A+%24%28%24_.Exception.Message%29%22%0D%0A++++++++++++Start-Sleep+-Seconds+%24RetryDelay%0D%0A++++++++++++%24attempts%2B%2B%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A%0D%0A++++if+%28-not+%24success%29+%7B%0D%0A++++++++throw+%22Command+failed+after+%24MaxRetries+attempts.%22%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0Afunction+Add-WingetLocally+%7B%0D%0A++++foreach+%28%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29%29+%7B%0D%0A++++++++%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27Winget%27+-Resolve+-ErrorAction+%27SilentlyContinue%27%3B%0D%0A++++%7D%0D%0A%0D%0A++++if+%28%24found%29+%7B%0D%0A++++++++%24AppxFiles+%3D+%40%28%29%0D%0A++++++++%24DependenciesPath+%3D+Join-Path+-Path+%24found+-ChildPath+%22Dependencies%22%0D%0A%0D%0A++++++++if+%28%24Architecture+-ieq+%22amd64%22%29+%7B%0D%0A++++++++++++%24AppxFiles+%3D+Get-ChildItem+-Path+%28Join-Path+-Path+%24DependenciesPath+-ChildPath+%22x64%22%29+-Filter+%22*.appx%22%0D%0A++++++++%7D%0D%0A++++++++else+%7B%0D%0A++++++++++++%24AppxFiles+%3D+Get-ChildItem+-Path+%28Join-Path+-Path+%24DependenciesPath+-ChildPath+%24Architecture%29+-Filter+%22*.appx%22%0D%0A++++++++%7D%0D%0A%0D%0A++++++++foreach+%28%24Appx+in+%24AppxFiles%29+%7B%0D%0A++++++++++++Retry-Command+-Command+%7B+Invoke-Expression+%22Add-AppxPackage+-Path+%27%24%28%24Appx.FullName%29%27+%24OtherParams%22+%7D%0D%0A++++++++%7D%0D%0A%0D%0A++++++++Retry-Command+-Command+%7B+Invoke-Expression+%22Add-AppxPackage+-Path+%27%24%28Join-Path+-Path+%24found+-ChildPath+%27Winget.msixbundle%27%29%27+%24OtherParams%22+%7D%0D%0A++++%7D+%0D%0A++++else+%7B%0D%0A++++++++Write-Warning+%22An+error+occurred%3A+%24%28%24_.Exception.Message%29%22%0D%0A++++++++return%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0Afunction+Add-WingetRemotely+%7B%0D%0A++++%24DependenciesURL+%3D+%22https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fwinget-cli%2Freleases%2Flatest%2Fdownload%2FDesktopAppInstaller_Dependencies.zip%22%0D%0A++++%24WingetURL+%3D+%22https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fwinget-cli%2Freleases%2Flatest%2Fdownload%2FMicrosoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle%22%0D%0A++++%24DependenciesPath+%3D+Join-Path+-Path+%24DownloadDir+-ChildPath+%22Dependencies.zip%22%0D%0A++++%24WingetPath+%3D+Join-Path+-Path+%24DownloadDir+-ChildPath+%22Winget.msixbundle%22%0D%0A%0D%0A++++Retry-Command+-Command+%7B+Invoke-WebRequest+%24DependenciesURL+-OutFile+%24DependenciesPath+-UseBasicParsing+-ErrorAction+Stop+%7D%0D%0A++++Retry-Command+-Command+%7B+Invoke-WebRequest+%24WingetURL+-OutFile+%24WingetPath+-UseBasicParsing+-ErrorAction+Stop+%7D%0D%0A++++Expand-Archive+-Path+%24DependenciesPath+-DestinationPath+%24DownloadDir+-Force%0D%0A%0D%0A++++%24AppxFiles+%3D+%40%28%29%0D%0A%0D%0A++++if+%28%24Architecture+-ieq+%22amd64%22%29+%7B%0D%0A++++++++%24AppxFiles+%3D+Get-ChildItem+-Path+%28Join-Path+-Path+%24DownloadDir+-ChildPath+%22x64%22%29+-Filter+%22*.appx%22%0D%0A++++%7D%0D%0A++++else+%7B%0D%0A++++++++%24AppxFiles+%3D+Get-ChildItem+-Path+%28Join-Path+-Path+%24DownloadDir+-ChildPath+%24Architecture%29+-Filter+%22*.appx%22%0D%0A++++%7D%0D%0A%0D%0A++++foreach+%28%24Appx+in+%24AppxFiles%29+%7B%0D%0A++++++++Retry-Command+-Command+%7B+Invoke-Expression+%22Add-AppxPackage+-Path+%27%24%28%24Appx.FullName%29%27+%24OtherParams%22+%7D%0D%0A++++%7D%0D%0A%0D%0A++++Retry-Command+-Command+%7B+Invoke-Expression+%22Add-AppxPackage+-Path+%27%24WingetPath%27+%24OtherParams%22+%7D%0D%0A%7D%0D%0A%0D%0Afunction+Test-Winget+%7B%0D%0A++++%24WingetVer+%3D+Invoke-Expression+-Command+%22winget+-v%22+2%3E+%24null%0D%0A%0D%0A++++if+%28%21%24WingetVer+-or+%28%5Bversion%5D%28%24WingetVer.Split%28%27v%27%29%5B1%5D%29+-lt+%5Bversion%5D%28%221.9.25200%22%29%29%29+%7B%0D%0A++++++++Write-Warning+%22Winget+command+failed+or+outdated.+Downloading+winget+last+version+now...%22%0D%0A%0D%0A++++++++try+%7B%0D%0A++++++++++++Add-WingetLocally%0D%0A++++++++%7D%0D%0A++++++++catch+%7B%0D%0A++++++++++++Add-WingetRemotely%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A++++else+%7B%0D%0A++++++++Write-Host+%22Winget+is+up+to+date%21%22+-ForegroundColor+Green%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0Afunction+Add-WingetPkgs+%7B%0D%0A++++foreach+%28%24Pkg+in+%24Pkgs%29+%7B%0D%0A++++++++try+%7B%0D%0A++++++++++++%24installed+%3D+Invoke-Expression+-Command+%22winget+list+%24Pkg+%2D%2Daccept-source-agreements%22%0D%0A++++++++++++if+%28%24installed+-match+%28%5Bregex%5D%3A%3AEscape%28%24Pkg%29%29%29+%7B%0D%0A++++++++++++++++Write-Warning+%22%24Pkg+is+already+installed.%22%0D%0A++++++++++++%7D%0D%0A++++++++++++else+%7B%0D%0A++++++++++++++++Retry-Command+-Command+%7B+Invoke-Expression+-Command+%22winget+install+%2D%2Dexact+%2D%2Did+%24Pkg+%2D%2Dsilent+%2D%2Daccept-package-agreements+%2D%2Daccept-source-agreements+%2D%2Dsource+winget%22+-ErrorAction+Stop+%7D%0D%0A++++++++++++++++if+%28%24%3F%29+%7B+Write-Host+%22Package+%24Pkg+installed+successfully.%22+-ForegroundColor+Green+%7D%0D%0A++++++++++++%7D%0D%0A++++++++%7D%0D%0A++++++++catch+%7B%0D%0A++++++++++++Write-Warning+%22Failed+to+install+package%3A+%24Pkg.+Error%3A+%24%28%24_.Exception.Message%29%22%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A++++Write-Host+%22All+packages+processed.%22%0D%0A%7D%0D%0A%0D%0Afunction+Add-UserShortcut+%7B%0D%0A++++%24ShortcutLocation+%3D+%5BSystem.Environment%5D%3A%3AGetFolderPath%28%5BSystem.Environment%2BSpecialFolder%5D%3A%3ADesktop%29+%2B+%22%5CPasta+Pessoal.lnk%22%0D%0A++++%24WScriptShell+%3D+New-Object+-ComObject+WScript.Shell%0D%0A++++%24Shortcut+%3D+%24WScriptShell.CreateShortcut%28%24ShortcutLocation%29%0D%0A++++%24Shortcut.TargetPath+%3D+%22%24env%3AUserProfile%22%0D%0A++++%24Shortcut.IconLocation+%3D+%22C%3A%5CWindows%5CSystem32%5Cshell32.dll%2C160%22%0D%0A++++%24Shortcut.Save%28%29%0D%0A%0D%0A++++Write-Host+%22Added+UserProfile+shortcut+to+desktop+with+custom+icon.%22+-ForegroundColor+Green%0D%0A%7D%0D%0A%0D%0Afunction+Set-GitProfile+%7B%0D%0A++++%24GitConfigFile+%3D+Join-Path+-Path+%24env%3AUSERPROFILE+-ChildPath+%22.gitconfig%22%0D%0A%0D%0A++++%22%5Buser%5D%22+%7C+Out-File+-FilePath+%24GitConfigFile%0D%0A++++%22++++name+%3D+Reinaldo+G.+P.+Neto%22+%7C+Out-File+-FilePath+%24GitConfigFile+-Append%0D%0A++++%22++++email+%3D+reinaldogpn%40outlook.com%22+%7C+Out-File+-FilePath+%24GitConfigFile+-Append%0D%0A%0D%0A++++Write-Host+%22Added+.gitconfig+file.%22+-ForegroundColor+Green%0D%0A%7D%0D%0A%0D%0A%23+Execution%0D%0A%0D%0AStart-Transcript+-Path+%24OutputLog+%0D%0A%0D%0ATest-Winget%0D%0AAdd-WingetPkgs%0D%0AAdd-UserShortcut%0D%0ASet-GitProfile%0D%0A%0D%0Aif+%28Test-Path+%24DownloadDir%29+%7B+Remove-Item+-Path+%24DownloadDir+-Recurse+-Force+%7C+Out-Null+%7D%0D%0A%0D%0AStop-Transcript&FirstLogonScriptType0=Ps1&WdacMode=Skip-->
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=pt-BR&Locale=pt-BR&Keyboard=00020409&GeoLocation=32&ProcessorArchitecture=x86&ProcessorArchitecture=amd64&ProcessorArchitecture=arm64&BypassRequirementsCheck=true&ComputerNameMode=Script&ComputerNameScript=if%28+%5BSystem.Environment%5D%3A%3AOSVersion.Version.Build+-lt+26100+%29+%7B%0D%0A++++return+%27WIN10-REINALDO%27%3B%0D%0A%7D+else+%7B%0D%0A++++return+%27WIN11-REINALDO%27%3B%0D%0A%7D&CompactOsMode=Default&TimeZoneMode=Implicit&PartitionMode=Interactive&WindowsEditionMode=Generic&WindowsEdition=pro&UserAccountMode=Unattended&AccountName0=reina&AccountDisplayName0=Reinaldo&AccountPassword0=091016&AccountGroup0=Administrators&AccountName1=&AccountName2=&AccountName3=&AccountName4=&AutoLogonMode=Own&ObscurePasswords=true&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=Hidden&ShowFileExtensions=true&ClassicContextMenu=true&LaunchToThisPC=true&TaskbarSearch=Hide&TaskbarIconsMode=Custom&TaskbarIconsXml=%3CLayoutModificationTemplate+xmlns%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FLayoutModification%22+xmlns%3Adefaultlayout%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FFullDefaultLayout%22+xmlns%3Astart%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FStartLayout%22+xmlns%3Ataskbar%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FTaskbarLayout%22+Version%3D%221%22%3E%0D%0A++%3CCustomTaskbarLayoutCollection+PinListPlacement%3D%22Replace%22%3E%0D%0A++++%3Cdefaultlayout%3ATaskbarLayout%3E%0D%0A++++++%3Ctaskbar%3ATaskbarPinList%3E%0D%0A++++++++%3Ctaskbar%3ADesktopApp+DesktopApplicationID%3D%22Microsoft.Windows.Explorer%22+%2F%3E%0D%0A++++++++%3Ctaskbar%3ADesktopApp+DesktopApplicationID%3D%22Microsoft.WindowsTerminal%22+%2F%3E%0D%0A++++++%3C%2Ftaskbar%3ATaskbarPinList%3E%0D%0A++++%3C%2Fdefaultlayout%3ATaskbarLayout%3E%0D%0A++%3C%2FCustomTaskbarLayoutCollection%3E%0D%0A%3C%2FLayoutModificationTemplate%3E&HideTaskViewButton=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&EnableLongPaths=true&EnableRemoteDesktop=true&AllowPowerShellScripts=true&DisableAppSuggestions=true&HideEdgeFre=true&DeleteWindowsOld=true&EffectsMode=Appearance&DesktopIconsMode=Custom&IconControlPanel=true&IconRecycleBin=true&IconUserFiles=true&WifiMode=Skip&ExpressSettings=DisableAll&KeysMode=Configure&CapsLockInitial=Off&CapsLockBehavior=Toggle&NumLockInitial=On&NumLockBehavior=Toggle&ScrollLockInitial=Off&ScrollLockBehavior=Toggle&ColorMode=Custom&SystemColorTheme=Dark&AppsColorTheme=Dark&AccentColor=%230b0c2b&EnableTransparency=true&WallpaperMode=Script&WallpaperScript=%24url+%3D+%27https%3A%2F%2Fraw.githubusercontent.com%2Freinaldogpn%2Fwindows-post-install%2Frefs%2Fheads%2Fmain%2Fresources%2Fwallpaper.jpg%27%3B%0D%0Areturn+%28+Invoke-WebRequest+-Uri+%24url+-UseBasicParsing+-TimeoutSec+30+%29.Content%3B&Remove3DViewer=true&RemoveBingSearch=true&RemoveCamera=true&RemoveClipchamp=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMediaFeatures=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveOffice365=true&RemoveOneNote=true&RemoveOneSync=true&RemovePaint3D=true&RemovePeople=true&RemovePowerAutomate=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveSkype=true&RemoveSnippingTool=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveFaxAndScan=true&RemoveWindowsHello=true&RemoveWindowsMediaPlayer=true&RemoveZuneMusic=true&RemoveWordPad=true&RemoveXboxApps=true&RemoveYourPhone=true&FirstLogonScript0=%24Pkgs+%3D+%40%28%0D%0A++++%227zip.7zip%22%2C%0D%0A++++%22Cloudflare.Warp%22%2C%0D%0A++++%22Discord.Discord%22%2C%0D%0A++++%22Git.Git%22%2C%0D%0A++++%22Google.Chrome.EXE%22%2C%0D%0A++++%22Microsoft.VCRedist.2015%2B.x64%22%2C%0D%0A++++%22Microsoft.VCRedist.2015%2B.x86%22%2C%0D%0A++++%22Microsoft.VisualStudioCode%22%2C%0D%0A++++%22Microsoft.VisualStudio.2022.Community%22%2C%0D%0A++++%22Microsoft.WindowsTerminal%22%2C%0D%0A++++%22Notepad%2B%2B.Notepad%2B%2B%22%2C%0D%0A++++%22Oracle.JavaRuntimeEnvironment%22%2C%0D%0A++++%22Oracle.MySQL%22%2C%0D%0A++++%22qBittorrent.qBittorrent%22%2C%0D%0A++++%22RARLab.WinRAR%22%2C%0D%0A++++%22TeamViewer.TeamViewer%22%2C%0D%0A++++%22Valve.Steam%22%2C%0D%0A++++%22VideoLAN.VLC%22%0D%0A%29%0D%0A%0D%0A%24RootDir+%3D+Join-Path+-Path+%24env%3AUserProfile+-ChildPath+%22WPI%22%0D%0A%24DownloadDir+%3D+Join-Path+-Path+%24RootDir+-ChildPath+%22downloads%22%0D%0A%24OutputLog+%3D+Join-Path+-Path+%24RootDir+-ChildPath+%22output.log%22%0D%0A%24Architecture+%3D+%24env%3AProcessor_Architecture.ToLower%28%29%0D%0A%0D%0Aif+%28%5BSystem.Environment%5D%3A%3AOSVersion.Version.Build+-ge+26100%29+%7B%0D%0A++++%24OtherParams+%3D+%22-AllowUnsigned+-ForceApplicationShutdown+-ErrorAction+Stop%22%0D%0A%7D%0D%0Aelse+%7B%0D%0A++++%24OtherParams+%3D+%22-ForceApplicationShutdown+-ErrorAction+Stop%22%0D%0A%7D%0D%0A%0D%0Aif+%28-not+%28Test-Path+%24RootDir%29%29+%7B+New-Item+-ItemType+Directory+-Path+%24RootDir+%7C+Out-Null+%7D%0D%0Aif+%28-not+%28Test-Path+%24DownloadDir%29%29+%7B+New-Item+-ItemType+Directory+-Path+%24DownloadDir+%7C+Out-Null+%7D%0D%0A%0D%0A%23+Functions%0D%0A%0D%0Afunction+Retry-Command+%7B%0D%0A++++param+%28%0D%0A++++++++%5BScriptBlock%5D%24Command%2C%0D%0A++++++++%5Bint%5D%24MaxRetries+%3D+5%2C%0D%0A++++++++%5Bint%5D%24RetryDelay+%3D+5%0D%0A++++%29%0D%0A%0D%0A++++%24attempts+%3D+0%0D%0A++++%24success+%3D+%24false%0D%0A%0D%0A++++while+%28-not+%24success+-and+%24attempts+-lt+%24MaxRetries%29+%7B%0D%0A++++++++try+%7B%0D%0A++++++++++++%26+%24Command%0D%0A++++++++++++%24success+%3D+%24true%0D%0A++++++++%7D%0D%0A++++++++catch+%7B%0D%0A++++++++++++Write-Warning+%22Attempt+%24%28%24attempts+%2B+1%29+failed.+Error%3A+%24%28%24_.Exception.Message%29%22%0D%0A++++++++++++Start-Sleep+-Seconds+%24RetryDelay%0D%0A++++++++++++%24attempts%2B%2B%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A%0D%0A++++if+%28-not+%24success%29+%7B%0D%0A++++++++throw+%22Command+failed+after+%24MaxRetries+attempts.%22%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0Afunction+Add-WingetLocally+%7B%0D%0A++++foreach+%28%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29%29+%7B%0D%0A++++++++%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27Winget%27+-Resolve+-ErrorAction+%27SilentlyContinue%27%3B%0D%0A++++%7D%0D%0A%0D%0A++++if+%28%24found%29+%7B%0D%0A++++++++%24AppxFiles+%3D+%40%28%29%0D%0A++++++++%24DependenciesPath+%3D+Join-Path+-Path+%24found+-ChildPath+%22Dependencies%22%0D%0A%0D%0A++++++++if+%28%24Architecture+-ieq+%22amd64%22%29+%7B%0D%0A++++++++++++%24AppxFiles+%3D+Get-ChildItem+-Path+%28Join-Path+-Path+%24DependenciesPath+-ChildPath+%22x64%22%29+-Filter+%22*.appx%22%0D%0A++++++++%7D%0D%0A++++++++else+%7B%0D%0A++++++++++++%24AppxFiles+%3D+Get-ChildItem+-Path+%28Join-Path+-Path+%24DependenciesPath+-ChildPath+%24Architecture%29+-Filter+%22*.appx%22%0D%0A++++++++%7D%0D%0A%0D%0A++++++++foreach+%28%24Appx+in+%24AppxFiles%29+%7B%0D%0A++++++++++++Retry-Command+-Command+%7B+Invoke-Expression+%22Add-AppxPackage+-Path+%27%24%28%24Appx.FullName%29%27+%24OtherParams%22+%7D%0D%0A++++++++%7D%0D%0A%0D%0A++++++++Retry-Command+-Command+%7B+Invoke-Expression+%22Add-AppxPackage+-Path+%27%24%28Join-Path+-Path+%24found+-ChildPath+%27Winget.msixbundle%27%29%27+%24OtherParams%22+%7D%0D%0A++++%7D+%0D%0A++++else+%7B%0D%0A++++++++Write-Warning+%22An+error+occurred%3A+%24%28%24_.Exception.Message%29%22%0D%0A++++++++return%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0Afunction+Add-WingetRemotely+%7B%0D%0A++++%24DependenciesURL+%3D+%22https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fwinget-cli%2Freleases%2Flatest%2Fdownload%2FDesktopAppInstaller_Dependencies.zip%22%0D%0A++++%24WingetURL+%3D+%22https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fwinget-cli%2Freleases%2Flatest%2Fdownload%2FMicrosoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle%22%0D%0A++++%24DependenciesPath+%3D+Join-Path+-Path+%24DownloadDir+-ChildPath+%22Dependencies.zip%22%0D%0A++++%24WingetPath+%3D+Join-Path+-Path+%24DownloadDir+-ChildPath+%22Winget.msixbundle%22%0D%0A%0D%0A++++Retry-Command+-Command+%7B+Invoke-WebRequest+%24DependenciesURL+-OutFile+%24DependenciesPath+-UseBasicParsing+-ErrorAction+Stop+%7D%0D%0A++++Retry-Command+-Command+%7B+Invoke-WebRequest+%24WingetURL+-OutFile+%24WingetPath+-UseBasicParsing+-ErrorAction+Stop+%7D%0D%0A++++Expand-Archive+-Path+%24DependenciesPath+-DestinationPath+%24DownloadDir+-Force%0D%0A%0D%0A++++%24AppxFiles+%3D+%40%28%29%0D%0A%0D%0A++++if+%28%24Architecture+-ieq+%22amd64%22%29+%7B%0D%0A++++++++%24AppxFiles+%3D+Get-ChildItem+-Path+%28Join-Path+-Path+%24DownloadDir+-ChildPath+%22x64%22%29+-Filter+%22*.appx%22%0D%0A++++%7D%0D%0A++++else+%7B%0D%0A++++++++%24AppxFiles+%3D+Get-ChildItem+-Path+%28Join-Path+-Path+%24DownloadDir+-ChildPath+%24Architecture%29+-Filter+%22*.appx%22%0D%0A++++%7D%0D%0A%0D%0A++++foreach+%28%24Appx+in+%24AppxFiles%29+%7B%0D%0A++++++++Retry-Command+-Command+%7B+Invoke-Expression+%22Add-AppxPackage+-Path+%27%24%28%24Appx.FullName%29%27+%24OtherParams%22+%7D%0D%0A++++%7D%0D%0A%0D%0A++++Retry-Command+-Command+%7B+Invoke-Expression+%22Add-AppxPackage+-Path+%27%24WingetPath%27+%24OtherParams%22+%7D%0D%0A%7D%0D%0A%0D%0Afunction+Test-Winget+%7B%0D%0A++++%24WingetVer+%3D+Invoke-Expression+-Command+%22winget+-v%22+2%3E+%24null%0D%0A%0D%0A++++if+%28%21%24WingetVer+-or+%28%5Bversion%5D%28%24WingetVer.Split%28%27v%27%29%5B1%5D%29+-lt+%5Bversion%5D%28%221.9.25200%22%29%29%29+%7B%0D%0A++++++++Write-Warning+%22Winget+command+failed+or+outdated.+Downloading+winget+last+version+now...%22%0D%0A%0D%0A++++++++try+%7B%0D%0A++++++++++++Add-WingetLocally%0D%0A++++++++%7D%0D%0A++++++++catch+%7B%0D%0A++++++++++++Add-WingetRemotely%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A++++else+%7B%0D%0A++++++++Write-Host+%22Winget+is+up+to+date%21%22+-ForegroundColor+Green%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0Afunction+Add-WingetPkgs+%7B%0D%0A++++foreach+%28%24Pkg+in+%24Pkgs%29+%7B%0D%0A++++++++try+%7B%0D%0A++++++++++++%24installed+%3D+Invoke-Expression+-Command+%22winget+list+%24Pkg+%2D%2Daccept-source-agreements%22%0D%0A++++++++++++if+%28%24installed+-match+%28%5Bregex%5D%3A%3AEscape%28%24Pkg%29%29%29+%7B%0D%0A++++++++++++++++Write-Warning+%22%24Pkg+is+already+installed.%22%0D%0A++++++++++++%7D%0D%0A++++++++++++else+%7B%0D%0A++++++++++++++++Retry-Command+-Command+%7B+Invoke-Expression+-Command+%22winget+install+%2D%2Dexact+%2D%2Did+%24Pkg+%2D%2Dsilent+%2D%2Daccept-package-agreements+%2D%2Daccept-source-agreements+%2D%2Dsource+winget%22+-ErrorAction+Stop+%7D%0D%0A++++++++++++++++if+%28%24%3F%29+%7B+Write-Host+%22Package+%24Pkg+installed+successfully.%22+-ForegroundColor+Green+%7D%0D%0A++++++++++++%7D%0D%0A++++++++%7D%0D%0A++++++++catch+%7B%0D%0A++++++++++++Write-Warning+%22Failed+to+install+package%3A+%24Pkg.+Error%3A+%24%28%24_.Exception.Message%29%22%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A++++Write-Host+%22All+packages+processed.%22%0D%0A%7D%0D%0A%0D%0Afunction+Add-UserShortcut+%7B%0D%0A++++%24ShortcutLocation+%3D+%5BSystem.Environment%5D%3A%3AGetFolderPath%28%5BSystem.Environment%2BSpecialFolder%5D%3A%3ADesktop%29+%2B+%22%5CPasta+Pessoal.lnk%22%0D%0A++++%24WScriptShell+%3D+New-Object+-ComObject+WScript.Shell%0D%0A++++%24Shortcut+%3D+%24WScriptShell.CreateShortcut%28%24ShortcutLocation%29%0D%0A++++%24Shortcut.TargetPath+%3D+%22%24env%3AUserProfile%22%0D%0A++++%24Shortcut.IconLocation+%3D+%22C%3A%5CWindows%5CSystem32%5Cshell32.dll%2C160%22%0D%0A++++%24Shortcut.Save%28%29%0D%0A%0D%0A++++Write-Host+%22Added+UserProfile+shortcut+to+desktop+with+custom+icon.%22+-ForegroundColor+Green%0D%0A%7D%0D%0A%0D%0A%23+Execution%0D%0A%0D%0AStart-Transcript+-Path+%24OutputLog+%0D%0A%0D%0ATest-Winget%0D%0AAdd-WingetPkgs%0D%0A%0D%0Aif+%28Test-Path+%24DownloadDir%29+%7B+Remove-Item+-Path+%24DownloadDir+-Recurse+-Force+%7C+Out-Null+%7D%0D%0A%0D%0AStop-Transcript&FirstLogonScriptType0=Ps1&WdacMode=Skip-->
 	<settings pass="offlineServicing"></settings>
 	<settings pass="windowsPE">
 		<component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -209,25 +209,18 @@
 			<UserAccounts>
 				<LocalAccounts>
 					<LocalAccount wcm:action="add">
-						<Name>Reinaldo</Name>
+						<Name>reina</Name>
+						<DisplayName>Reinaldo</DisplayName>
 						<Group>Administrators</Group>
 						<Password>
 							<Value>MAA5ADEAMAAxADYAUABhAHMAcwB3AG8AcgBkAA==</Value>
 							<PlainText>false</PlainText>
 						</Password>
 					</LocalAccount>
-					<LocalAccount wcm:action="add">
-						<Name>User</Name>
-						<Group>Users</Group>
-						<Password>
-							<Value>MAA5ADEAMABQAGEAcwBzAHcAbwByAGQA</Value>
-							<PlainText>false</PlainText>
-						</Password>
-					</LocalAccount>
 				</LocalAccounts>
 			</UserAccounts>
 			<AutoLogon>
-				<Username>Reinaldo</Username>
+				<Username>reina</Username>
 				<Enabled>true</Enabled>
 				<LogonCount>1</LogonCount>
 				<Password>
@@ -252,25 +245,18 @@
 			<UserAccounts>
 				<LocalAccounts>
 					<LocalAccount wcm:action="add">
-						<Name>Reinaldo</Name>
+						<Name>reina</Name>
+						<DisplayName>Reinaldo</DisplayName>
 						<Group>Administrators</Group>
 						<Password>
 							<Value>MAA5ADEAMAAxADYAUABhAHMAcwB3AG8AcgBkAA==</Value>
 							<PlainText>false</PlainText>
 						</Password>
 					</LocalAccount>
-					<LocalAccount wcm:action="add">
-						<Name>User</Name>
-						<Group>Users</Group>
-						<Password>
-							<Value>MAA5ADEAMABQAGEAcwBzAHcAbwByAGQA</Value>
-							<PlainText>false</PlainText>
-						</Password>
-					</LocalAccount>
 				</LocalAccounts>
 			</UserAccounts>
 			<AutoLogon>
-				<Username>Reinaldo</Username>
+				<Username>reina</Username>
 				<Enabled>true</Enabled>
 				<LogonCount>1</LogonCount>
 				<Password>
@@ -295,25 +281,18 @@
 			<UserAccounts>
 				<LocalAccounts>
 					<LocalAccount wcm:action="add">
-						<Name>Reinaldo</Name>
+						<Name>reina</Name>
+						<DisplayName>Reinaldo</DisplayName>
 						<Group>Administrators</Group>
 						<Password>
 							<Value>MAA5ADEAMAAxADYAUABhAHMAcwB3AG8AcgBkAA==</Value>
 							<PlainText>false</PlainText>
 						</Password>
 					</LocalAccount>
-					<LocalAccount wcm:action="add">
-						<Name>User</Name>
-						<Group>Users</Group>
-						<Password>
-							<Value>MAA5ADEAMABQAGEAcwBzAHcAbwByAGQA</Value>
-							<PlainText>false</PlainText>
-						</Password>
-					</LocalAccount>
 				</LocalAccounts>
 			</UserAccounts>
 			<AutoLogon>
-				<Username>Reinaldo</Username>
+				<Username>reina</Username>
 				<Enabled>true</Enabled>
 				<LogonCount>1</LogonCount>
 				<Password>
@@ -412,7 +391,6 @@ $selectors = @(
 	'Microsoft.Office.OneNote';
 	'Microsoft.MSPaint';
 	'Microsoft.People';
-	'Microsoft.Windows.Photos';
 	'Microsoft.PowerAutomateDesktop';
 	'MicrosoftCorporationII.QuickAssist';
 	'Microsoft.SkypeApp';
@@ -957,24 +935,12 @@ function Add-UserShortcut {
     Write-Host "Added UserProfile shortcut to desktop with custom icon." -ForegroundColor Green
 }
 
-function Set-GitProfile {
-    $GitConfigFile = Join-Path -Path $env:USERPROFILE -ChildPath ".gitconfig"
-
-    "[user]" | Out-File -FilePath $GitConfigFile
-    "    name = Reinaldo G. P. Neto" | Out-File -FilePath $GitConfigFile -Append
-    "    email = reinaldogpn@outlook.com" | Out-File -FilePath $GitConfigFile -Append
-
-    Write-Host "Added .gitconfig file." -ForegroundColor Green
-}
-
 # Execution
 
 Start-Transcript -Path $OutputLog 
 
 Test-Winget
 Add-WingetPkgs
-Add-UserShortcut
-Set-GitProfile
 
 if (Test-Path $DownloadDir) { Remove-Item -Path $DownloadDir -Recurse -Force | Out-Null }
 
@@ -1014,6 +980,9 @@ $scripts = @(
 	};
 	{
 		Register-ScheduledTask -TaskName 'UnlockStartLayout' -Xml $( Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\UnlockStartLayout.xml' -Raw );
+	};
+	{
+		reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
 	};
 	{
 		netsh.exe advfirewall firewall set rule group="@FirewallAPI.dll,-28752" new enable=Yes;
@@ -1097,6 +1066,36 @@ $scripts = @(
 		Set-ItemProperty -LiteralPath 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects' -Name 'VisualFXSetting' -Type 'DWord' -Value 1 -Force;
 	};
 	{
+		New-Item -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Force;
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{5399e694-6ce5-4d6c-8fce-1d8870fdcba0}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{b4bfcc3a-db2c-424c-b029-7fe99a87c641}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{a8cdff1c-4878-43be-b5fd-f8091c1c60d0}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{374de290-123f-4565-9164-39c4925e467b}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{f874310e-b6b7-47dc-bc84-b9e6b38f5903}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{1cf1260c-4dd0-4ebb-811f-33c572699fde}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{f02c1a0d-be21-4350-88b0-7367fc96ef3c}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{3add1653-eb32-4cb0-bbd7-dfa0abb5acca}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{645ff040-5081-101b-9f08-00aa002f954e}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{20d04fe0-3aea-1069-a2d8-08002b30309d}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{59031a47-3f72-44a7-89c5-5595fe6b30ee}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{a0953c92-50dc-43bf-be83-3742fed03c9c}' -Value 1 -Type 'DWord';
+		New-Item -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Force;
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{5399e694-6ce5-4d6c-8fce-1d8870fdcba0}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{b4bfcc3a-db2c-424c-b029-7fe99a87c641}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{a8cdff1c-4878-43be-b5fd-f8091c1c60d0}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{374de290-123f-4565-9164-39c4925e467b}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{f874310e-b6b7-47dc-bc84-b9e6b38f5903}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{1cf1260c-4dd0-4ebb-811f-33c572699fde}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{f02c1a0d-be21-4350-88b0-7367fc96ef3c}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{3add1653-eb32-4cb0-bbd7-dfa0abb5acca}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{645ff040-5081-101b-9f08-00aa002f954e}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{20d04fe0-3aea-1069-a2d8-08002b30309d}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{59031a47-3f72-44a7-89c5-5595fe6b30ee}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{a0953c92-50dc-43bf-be83-3742fed03c9c}' -Value 1 -Type 'DWord';
+	};
+	{
 		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\SetColorTheme.ps1' -Raw | Invoke-Expression;
 	};
 	{
@@ -1135,9 +1134,6 @@ $scripts = @(
 		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "HideFileExt" /t REG_DWORD /d 0 /f;
 	};
 	{
-		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Hidden" /t REG_DWORD /d 1 /f;
-	};
-	{
 		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v ShowTaskViewButton /t REG_DWORD /d 0 /f;
 	};
 	{
@@ -1161,6 +1157,11 @@ $scripts = @(
 		
 		foreach( $name in $names ) {
 		  reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v $name /t REG_DWORD /d 0 /f;
+		}
+	};
+	{
+		foreach( $root in 'Registry::HKU\.DEFAULT', 'Registry::HKU\DefaultUser' ) {
+		  Set-ItemProperty -LiteralPath "$root\Control Panel\Keyboard" -Name 'InitialKeyboardIndicators' -Type 'String' -Value 2 -Force;
 		}
 	};
 	{
